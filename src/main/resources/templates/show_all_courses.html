@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Courses</title>
+</head>
+<body>
+<h1>All Courses</h1>
+<table>
+<tr th:each="course :${all_courses}">
+<td th:text="${course}"></td>
+</tr>
+</table>
+</body>
+</html>
